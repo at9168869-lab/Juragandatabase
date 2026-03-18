@@ -8,38 +8,35 @@
 <body onload="checkLogin()">
 
 <div class="navbar">
-    <div class="logo">SMM PANEL</div>
-    <div class="menu">
-        <a href="order.html">Order</a>
-        <a href="services.html">Services</a>
-        <a href="history.html">History</a>
-        <a href="deposit.html">Deposit</a>
-        <a href="#" onclick="logout()">Logout</a>
+    <div class="logo">SMM PRO</div>
+</div>
+
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide">⚡ Fast Order</div>
+        <div class="slide">💎 Cheap Price</div>
+        <div class="slide">🚀 Auto System</div>
+        <div class="slide">🔥 Best Panel</div>
     </div>
 </div>
 
 <div class="grid">
-    <div class="card">
-        <h3>Balance</h3>
-        <h1>$100</h1>
-    </div>
+    <div class="card"><h3>Balance</h3><h1 id="bal"></h1></div>
+    <div class="card"><h3>Orders</h3><h1>Auto</h1></div>
+</div>
 
-    <div class="card">
-        <h3>Total Orders</h3>
-        <h1>250</h1>
-    </div>
+<div id="toast" class="toast"></div>
 
-    <div class="card">
-        <h3>Users</h3>
-        <h1>153240</h1>
-    </div>
-
-    <div class="card">
-        <h3>Services</h3>
-        <h1>1200+</h1>
-    </div>
+<div class="bottom-nav">
+    <a href="dashboard.html">Home</a>
+    <a href="order.html">Order</a>
+    <a href="history.html">History</a>
+    <a href="deposit.html">Deposit</a>
 </div>
 
 <script src="script.js"></script>
+<script>
+document.getElementById("bal").innerText = "$" + localStorage.getItem("balance");
+</script>
 </body>
-  </html>
+</html>
