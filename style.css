@@ -1,0 +1,56 @@
+body {
+    margin:0;
+    font-family:Arial, sans-serif;
+    background: linear-gradient(180deg,#0b1f3a,#071427);
+    color:#fff;
+}
+
+/* NAVBAR */
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    padding:15px;
+    background:#0d2a4d;
+}
+
+.logo { font-weight:bold; }
+
+.menu a {
+    color:#fff;
+    margin-left:15px;
+    text-decoration:none;
+}
+
+/* CARD */
+.card {
+    background:#0d2a4d;
+    padding:20px;
+    border-radius:15px;
+    margin:15px;
+}
+
+/* BUTTON */
+.btn {
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#1da1f2;
+    color:#fff;
+}
+
+/* INPUT */
+.input {
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:10px;
+    border:none;
+}
+
+/* GRID */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
