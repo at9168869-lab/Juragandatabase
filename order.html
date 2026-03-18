@@ -7,25 +7,30 @@
 
 <body onload="checkLogin()">
 
-<div class="navbar">
-    <div class="logo">Order</div>
-</div>
+<div class="navbar"><div class="logo">Order</div></div>
 
 <div class="card">
-    <h2>Buat Pesanan</h2>
+    <h2>Buat Order</h2>
 
     <select class="input">
-        <option>Pilih Layanan</option>
         <option>Instagram Followers</option>
-        <option>Instagram Likes</option>
     </select>
 
     <input class="input" placeholder="Link">
     <input class="input" placeholder="Jumlah">
 
-    <button class="btn">Submit Order</button>
+    <button class="btn" onclick="order()">Submit</button>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<div class="bottom-nav">
+    <a href="dashboard.html">Home</a>
+    <a href="order.html">Order</a>
+    <a href="history.html">History</a>
+    <a href="deposit.html">Deposit</a>
 </div>
 
 <script src="script.js"></script>
 </body>
-  </html>
+</html>
