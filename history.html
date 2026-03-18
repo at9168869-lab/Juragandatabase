@@ -5,18 +5,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="checkLogin()">
+<body onload="checkLogin(); loadHistory()">
 
-<div class="navbar">
-    <div class="logo">History</div>
-</div>
+<div class="navbar"><div class="logo">History</div></div>
 
-<div class="card">
-    <p>Order #001 - Success</p>
-</div>
+<div id="historyList"></div>
 
-<div class="card">
-    <p>Order #002 - Pending</p>
+<div class="bottom-nav">
+    <a href="dashboard.html">Home</a>
+    <a href="order.html">Order</a>
+    <a href="history.html">History</a>
+    <a href="deposit.html">Deposit</a>
 </div>
 
 <script src="script.js"></script>
